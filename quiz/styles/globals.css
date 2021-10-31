@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&display=swap');
+
+body{
+    background-color: #EEF0F6;
+}
+.title{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+.home_text{
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 100;
+
+
+}
+
+
+.scatter{
+  background-image: url("../public/images/graph.1-01.png");
+}
+select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: gray;
+    background-color: #fff;
+    background-image: none;
+    cursor: pointer;
+     max-height: 50px;
+     font-family: 'IBM Plex Sans', sans-serif;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+
+
+  
+
+  .bar_option_mlti_large {
+    border-top: 3px solid #3039e8;
+    box-shadow: 0px 0px 5px rgb(12, 211, 178);
+
+  }
+
+  
+ 
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 75%;
+    height: 3em;
+    border-radius: 30px;
+    overflow: hidden;
+    
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    color: #304EE8;
+    opacity: 0.5;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    opacity: 1;
+  }
+  
+  
+  .btn_start{
+    box-shadow: 0px 0px 5px #fff;
+  }
+
+
+  .home_container{
+    box-shadow: 8px -1px 5px 0px rgba(193,193,193,0.54);
+    -webkit-box-shadow: 8px -1px 5px 0px rgba(193,193,193,0.54);
+    -moz-box-shadow: 8px -1px 5px 0px rgba(193,193,193,0.54);
+  }
+
+  .container{
+      background-color: #EEF0F6;
+    box-shadow: 8px -1px 5px 0px rgba(152,149,149,0.54);
+-webkit-box-shadow: 8px -1px 5px 0px rgba(152,149,149,0.54);
+-moz-box-shadow: 8px -1px 5px 0px rgba(152,149,149,0.54);
+  }
+
+
+.option_text{
+   font-size: 10px;
+   margin-top: 25px;
+   cursor: pointer;
+ 
+
+}
+
+.bar_option{
+    cursor: pointer;
+}
+
+.bar_option_hover:hover{
+   
+    border-top: 4px solid #30e8bd;
+    box-shadow: 0px 0px 5px rgb(12, 211, 178);
+    width: 70px;
+    transition: ease-in 0.5ms;
+    position: relative;
+    right: 5px;
+}
+
+
+.bar_option{
+    border-top: 4px solid #30e8bd;
+    box-shadow: 0px 0px 5px rgb(12, 211, 178);
+    width: 95px;
+    transition: ease-in 0.5ms;
+    position: relative;
+    right: 8px;
+   
+
+}
+
+canvas{
+
+  width:350px !important;
+  height:480px !important;
+
+}
+.barToslect{
+  border-top: 4px solid #30e8bd;
+  box-shadow: 0px 0px 5px rgb(12, 211, 178);
+ 
+
+}
+
+.btn_next{
+    box-shadow: 4px 4px 8px #4136d4;
+}
+
+.option_number{
+    font-size: 12px;
+    color: #304EE8;
+}
+
+
+.option_paragraph{
+    
+    font-size: 10px;
+    margin-top: 58px;
+    
+    cursor: pointer;
+    color: #304EE8;
+
+
+}
+
+
+.option_text5{
+
+    font-size: 10px;
+   margin-top: 45px;
+   cursor: pointer;
+
+}
+
+
+.bar_option_mlti{
+    border-top: 3px solid #3039e8;
+    box-shadow: 0px 0px 5px rgb(12, 211, 178);
+    width: 30px;
+    transition: ease-in 0.5ms;
+    
+
+}
+
+
+
+
+
+.bar_option_hover:hover{
+   
+    border-top: 3px solid #30e8bd;
+    box-shadow: 0px 0px 5px rgb(12, 211, 178);
+    width: 30px;
+    transition: ease-in 0.5ms;
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+     
+    .option_text{
+        font-size: 12px;
+        margin-top: 25px;
+        cursor: pointer;
+         font-weight: 500;
+      
+     
+     }
+
+    
+  }
+
+
+  @media screen and (max-width: 600px) {
+     
+    .bar_option{
+        border-top: 4px solid #30e8bd;
+        box-shadow: 0px 0px 5px rgb(12, 211, 178);
+        width: 95px;
+        transition: ease-in 0.5ms;
+        position: relative;
+        right: 18px;
+    
+    }
+
+    
+  }
