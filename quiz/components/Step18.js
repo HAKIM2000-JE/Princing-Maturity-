@@ -18,10 +18,10 @@ function Step1({formData , navigation}) {
 
         <div className="w-full mt-16 h-[650px] ">
         <main className="home_container bg-blue-700 w-full mx-auto  h-full  rounded-xl ">
-        <h1 className=" home_title text-5xl text-white px-12 md:py-5 py-2 w-1/3 " >PRICING MATURITY TEST</h1>
+        <h1 className=" home_title   text-2xl md:text-5xl text-white px-4 md:px-12 py-5 w-1/3  " >PRICING MATURITY TEST</h1>
 
         <Fade bottom delay={500}>
-        <p className=" home_text text-white text-lg px-16 md:py-5 py-3"  >WHAT IS YOUR   ACTIVITY ?</p>
+        <p className=" home_text text-white  text-md md:text-lg px-5 md:px-16 md:py-5 py-3"  >WHAT IS YOUR   ACTIVITY ?</p>
 
 
         </Fade>
@@ -32,11 +32,11 @@ function Step1({formData , navigation}) {
         {
           
             formData.sector == "Automotive"? (
-                <div className="select ml-16  ">
+                <div className="select md:ml-16  ml-5 ">
 
 
           
-             <select className="text-center"  value={activity} onChange={handlchange} >
+             <select className="text-center  w-5/12 text-[12px] md:text-md "  value={activity} onChange={handlchange} >
             
                <option value={activity}>{activity}</option>
                <option value="Automotive supplier">Automotive supplier</option>
@@ -54,11 +54,11 @@ function Step1({formData , navigation}) {
 
             ): formData.sector == "Bank & insurance"? (
 
-                <div className="select ml-16  ">
+                <div className="select md:ml-16  ml-5 ">
 
 
           
-                <select className="text-center"  value={activity} onChange={handlchange} >
+                <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
                
                   <option value={activity}>{activity}</option>
                   <option value="Insurance">Insurance</option>
@@ -77,11 +77,11 @@ function Step1({formData , navigation}) {
 
             ):  formData.sector == "Chemistry & Materials" ? (
 
-                <div className="select ml-16  ">
+                <div className="select md:ml-16  ml-5 ">
 
 
           
-                <select className="text-center"  value={activity} onChange={handlchange} >
+                <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
                
                   <option value={activity}>{activity}</option>
                   <option value="Chemistry & Materials">Chemistry & Materials</option>
@@ -101,11 +101,11 @@ function Step1({formData , navigation}) {
 
             ):  formData.sector == "Aircraft construction & defense" ? (
 
-                <div className="select ml-16  ">
+                <div className="select md:ml-16  ml-5 ">
 
 
           
-                <select className="text-center"  value={activity} onChange={handlchange} >
+                <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
                
                   <option value={activity}>{activity}</option>
                   <option value="Aeronautical & defense equipment supplier">Aeronautical & defense equipment supplier</option>
@@ -122,11 +122,11 @@ function Step1({formData , navigation}) {
                 </select>
            </div>): formData.sector == "B2B distribution" ? (
 
-            <div className="select ml-16  ">
+            <div className="select md:ml-16  ml-5 ">
 
 
       
-            <select className="text-center"  value={activity} onChange={handlchange} >
+            <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
            
               <option value={activity}>{activity}</option>
               <option value="B2B distribution">B2B distribution</option>
@@ -144,11 +144,11 @@ function Step1({formData , navigation}) {
             </select>
        </div>): formData.sector == "Consumer goods & Retail" ? (
 
-        <div className="select ml-16  ">
+        <div className="select md:ml-16  ml-5 ">
 
 
   
-        <select className="text-center"  value={activity} onChange={handlchange} >
+        <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
        
           <option value={activity}>{activity}</option>
           <option value="Food">Food</option>
@@ -180,11 +180,11 @@ function Step1({formData , navigation}) {
         </select>
    </div>):formData.sector == "Industry" ? (
 
-    <div className="select ml-16  ">
+    <div className="select md:ml-16  ml-5 ">
 
 
 
-    <select className="text-center"  value={activity} onChange={handlchange} >
+    <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
    
       <option value={activity}>{activity}</option>
       <option value="Industrial products and machinery">Industrial products and machinery</option>
@@ -202,11 +202,11 @@ function Step1({formData , navigation}) {
     </select>
 </div>):formData.sector == "Leisure, travel, vacation" ? (
 
-    <div className="select ml-16  ">
+    <div className="select md:ml-16  ml-5 ">
 
 
 
-    <select className="text-center"  value={activity} onChange={handlchange} >
+    <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
    
       <option value={activity}>{activity}</option>
       <option value="Theme parks, museum, cinemas">Theme parks, museum, cinemas</option>
@@ -233,11 +233,11 @@ function Step1({formData , navigation}) {
     </select>
 </div>):formData.sector == "Media and entertainment" ? (
 
-    <div className="select ml-16  ">
+    <div className="select md:ml-16  ml-5 ">
 
 
 
-    <select className="text-center"  value={activity} onChange={handlchange} >
+    <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
    
       <option value={activity}>{activity}</option>
       <option value="Classic media (TV, Radio, Press, billboards)">Classic media (TV, Radio, Press, billboards)</option>
@@ -258,11 +258,11 @@ function Step1({formData , navigation}) {
     </select>
 </div>):formData.sector == "Pharmacy and medical" ? (
 
-    <div className="select ml-16  ">
+    <div className="select md:ml-16  ml-5 ">
 
 
 
-    <select className="text-center"  value={activity} onChange={handlchange} >
+    <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
    
       <option value={activity}>{activity}</option>
       <option value="Medication">Medication</option>
@@ -285,11 +285,11 @@ function Step1({formData , navigation}) {
     </select>
 </div>):formData.sector == "B2B services" ? (
 
-    <div className="select ml-16  ">
+    <div className="select md:ml-16  ml-5 ">
 
 
 
-    <select className="text-center"  value={activity} onChange={handlchange} >
+    <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
    
       <option value={activity}>{activity}</option>
       <option value="Consulting & intellectual services">Consulting & intellectual services</option>
@@ -318,11 +318,11 @@ function Step1({formData , navigation}) {
     </select>
 </div>):formData.sector == "Software" ? (
 
-    <div className="select ml-16  ">
+    <div className="select md:ml-16  ml-5 ">
 
 
 
-    <select className="text-center"  value={activity} onChange={handlchange} >
+    <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
    
       <option value={activity}>{activity}</option>
       <option value="Software">Software</option>
@@ -343,11 +343,11 @@ function Step1({formData , navigation}) {
 </div>):
 formData.sector == "Passenger transport" ? (
 
-    <div className="select ml-16  ">
+    <div className="select md:ml-16  ml-5 ">
 
 
 
-    <select className="text-center"  value={activity} onChange={handlchange} >
+    <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
    
       <option value={activity}>{activity}</option>
       <option value="Passenger transport (air, rail, etc.)">Passenger transport (air, rail, etc.)</option>
@@ -367,11 +367,11 @@ formData.sector == "Passenger transport" ? (
     </select>
 </div>):formData.sector == "Transport and logistics" ? (
 
-    <div className="select ml-16  ">
+    <div className="select md:ml-16  ml-5 ">
 
 
 
-    <select className="text-center"  value={activity} onChange={handlchange} >
+    <select className="text-center  w-5/12 text-[12px] md:text-md"  value={activity} onChange={handlchange} >
    
       <option value={activity}>{activity}</option>
       <option value="Goods transport">Goods transport</option>

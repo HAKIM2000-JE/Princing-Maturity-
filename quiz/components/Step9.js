@@ -453,7 +453,7 @@ const showBar = (index)=>{
           <Progress  color="#304EE8" completed={42}  className="rounded-3xl" />
           
         </div>
-        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >How many differentiated price list per channel or per geograpahy do you have?</h1>
+        <h1 className="  home_title md:text-xl  px-12 py-7 w-10/12 relative xl:top-20  text-[13px]  " >How many differentiated price list per channel or per geograpahy do you have?</h1>
          
         
        

@@ -448,8 +448,8 @@ const showBar = (index)=>{
         <div className="w-full mt-16">
 
 
-        <h1 className=" hidden xl:flex absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
-        <hr className=" hidden xl:flex w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
+        <h1 className=" hidden xl:flex  absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
+        <hr className=" hidden xl:flex  w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
         
 
         <div className=" px-12 relative xl:top-20 ">
@@ -458,13 +458,13 @@ const showBar = (index)=>{
           <Progress  color="#304EE8" completed={6}  className="rounded-3xl" />
           
         </div>
-        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >HOW MANY <span className="text-blue-700">SKU</span>  YOUR COMPANY IS OFFERING ?</h1>
+        <h1 className=" home_title md:text-xl  px-12 py-7 w-10/12 relative xl:top-20  text-[13px] " >HOW MANY <span className="text-blue-700">SKU</span>  YOUR COMPANY IS OFFERING ?</h1>
          
 
 
           <div className="  xl:block  flex  mx-auto  ">
 
-          <div className="xl:hidden px-10  absolute  xl:px-28   xl:justify-around xl:relative h-[100px]   top-36">
+          <div className="xl:hidden px-10  absolute  xl:px-28   xl:justify-around xl:relative md:h-[100px] h-[80px]   top-36">
           {
                         Array(44).fill("s").map((value,index)=>(
                            
@@ -492,7 +492,7 @@ const showBar = (index)=>{
           </div>
 
 
-          <div className="xl:flex px-10 hidden  absolute  xl:px-28   xl:justify-around xl:relative h-[100px]   top-36">
+          <div className="xl:flex px-10 hidden  absolute  xl:px-28   xl:justify-around xl:relative md:h-[100px]    top-36">
           {
                         Array(44).fill("s").reverse().map((value,index)=>(
                            
@@ -521,7 +521,7 @@ const showBar = (index)=>{
 
           
 
-          <div className=" xl:hidden ml-10 flex flex-col    absolute left-44 xl:left-7 xl:px-12   xl:relative  xl:top-44 xl:w-11/12 top-[120px]  h-[400px] xl:mx-auto xl:ml-0  justify-between ">
+          <div className=" xl:hidden md:ml-10 flex flex-col    absolute left-44 xl:left-7 xl:px-12   xl:relative  xl:top-44 xl:w-11/12 top-[120px]  md:h-[400px] h-[300px]  xl:mx-auto xl:ml-0  justify-between ">
              {
                  choices.map((choice , index)=>(
                      <h1 className={`option_text text-${colors[index]} hover:text-blue-700   hover:font-bold  cursor-pointer  ` }   onClick={()=>{showBarV(index)}} >{choice}</h1>
@@ -542,7 +542,7 @@ const showBar = (index)=>{
         
           </div>
        
-        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 bottom-4 ">
+        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 md:bottom-4  bottom-7">
 
             <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
                 Back

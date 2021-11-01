@@ -515,7 +515,7 @@ useEffect(() => {
           <Progress  color="#304EE8" completed={30}  className="rounded-3xl" />
           
         </div>
-        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >How differentiated your offer is from what competition is offering ?</h1>
+        <h1 className=" home_title md:text-xl  px-12 py-7 w-10/12 relative xl:top-20  text-[13px]  " >How differentiated your offer is from what competition is offering ?</h1>
          
 
        
@@ -607,7 +607,7 @@ useEffect(() => {
                         ))
                     }
           </div>
-          <div className=" xl:hidden ml-10 absolute flex  xl:flex-row xl:w-10/12 xl:absolute xl:top-72  flex-col justify-around left-28       ">
+          <div className=" xl:hidden ml-10 absolute flex  xl:flex-row xl:w-10/12 xl:absolute xl:top-72  flex-col justify-around md:left-28  left-16     ">
              
 
                 

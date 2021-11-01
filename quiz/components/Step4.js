@@ -613,12 +613,12 @@ useEffect(() => {
                         ))
                     }
           </div>
-          <div className=" xl:hidden ml-10 absolute flex  xl:flex-row xl:w-10/12 xl:absolute xl:top-72  flex-col justify-around left-28       ">
+          <div className=" xl:hidden ml-10 absolute flex  xl:flex-row xl:w-10/12 xl:absolute xl:top-72  flex-col justify-around md:left-28  left-16     ">
              
 
                 
              
-          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > All the customers have the same price of a given product at a certain location at a certain time (expect loyalti program or discounts)  </h1>
+          <h1 className={`option_paragraph    position relative top-2 w-56    ${font4} ` }  > All the customers have the same price of a given product at a certain location at a certain time (expect loyalti program or discounts)  </h1>
           <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > Part of the business is not differentiated by client and part of the business is based on negociated prices  </h1>
           <h1 className={`option_paragraph position relative top-10 xl:top-2 xl:left-28   w-44 ${font2} ` }  > Most of my client have personnalized pricing through contract or quotation to reflects their specific profiles </h1>
           <h1 className={`option_paragraph   position relative top-2 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>

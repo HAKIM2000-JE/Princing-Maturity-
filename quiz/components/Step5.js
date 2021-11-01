@@ -458,7 +458,7 @@ function Step2( {formData, navigation}) {
           <Progress  color="#304EE8" completed={21}  className="rounded-3xl" />
           
         </div>
-        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >In B2B how often do you change your price for an avg client?</h1>
+        <h1 className="  home_title md:text-xl  px-12 py-7 w-10/12 relative xl:top-20  text-[13px] " >In B2B how often do you change your price for an avg client?</h1>
          
 
 

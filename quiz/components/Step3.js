@@ -457,7 +457,7 @@ const showBarV = (index)=>{
           <Progress  color="#304EE8" completed={12}  className="rounded-3xl" />
           
         </div>
-        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >What is your B2B/B2C share of revenue balance?</h1>
+        <h1 className="  home_title md:text-xl  px-12 py-7 w-10/12 relative xl:top-20  text-[13px]  " >What is your B2B/B2C share of revenue balance?</h1>
          
 
 

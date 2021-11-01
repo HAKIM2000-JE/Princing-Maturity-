@@ -17,12 +17,12 @@ function Step1({formData , navigation}) {
     return (
       
 
-        <div className="w-full mt-16 h-[650px] ">
+        <div className="w-full mt-16 h-[650px]  ">
         <main className="home_container bg-blue-700 w-full mx-auto  h-full  rounded-xl ">
-        <h1 className=" home_title text-5xl text-white px-12 py-5 w-1/3 " >PRICING MATURITY TEST</h1>
+        <h1 className=" home_title  text-2xl md:text-5xl text-white px-4 md:px-12 py-5 w-1/3 " >PRICING MATURITY TEST</h1>
 
         <Fade delay={500} bottom>
-        <p className=" home_text text-white text-lg px-16 md:py-5 py-3 "  >WHAT IS YOUR SECTOR OF ACTIVITY ?</p>
+        <p className=" home_text text-white  text-md md:text-lg px-5 md:px-16 md:py-5 py-3 "  >WHAT IS YOUR SECTOR OF ACTIVITY ?</p>
 
 
         </Fade>
@@ -30,8 +30,8 @@ function Step1({formData , navigation}) {
         
 
 
-<div className="select ml-16  ">
-     <select className="text-center"  value={sector} onChange={handlchange} >
+<div className="select md:ml-16  ml-5 ">
+     <select className="text-center  w-5/12  text-[12px] md:text-md "  value={sector} onChange={handlchange} >
     
        <option value={sector}>{sector}</option>
        <option value="Automotive">Automotive</option>

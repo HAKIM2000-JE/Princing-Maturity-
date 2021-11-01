@@ -76,11 +76,11 @@ const Radardata = {
 
     return (
 
-      <div className="  h-full mt-16 grid place-items-center">
+      <div className="  h-full mt-16 grid place-items-center ">
 
-      <div className="container relative   ">
-      <h1 className=" mx-auto home_title text-3xl text-blue-700 text-center  font-bold px-12 py-7 md:w-1/3 w-3/4 " >RESULTS</h1>
-      <h1 className=" mx-auto home_title text-2xl text-blue-700 text-center     w-3/4 " >PRICING MATURITY TEST</h1>
+      <div className="container relative  right-7 md:right-0  ">
+      <h1 className=" md:mx-auto home_title md:text-3xl text-blue-700 text-center  font-bold px-12 py-7 md:w-1/3 w-3/4 " >RESULTS</h1>
+      <h1 className=" md:mx-auto home_title md:text-2xl  text-blue-700 text-center     w-3/4 " >PRICING MATURITY TEST</h1>
      
       <div className=" md:w-8/12 w-full md:flex   mx-auto relative xl:left-52  bottom-[100px] md:mr-52 ml-5 md:ml-0  md:px-50   justify-around  " >
 

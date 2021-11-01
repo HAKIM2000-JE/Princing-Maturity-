@@ -514,7 +514,7 @@ useEffect(() => {
           <Progress  color="#304EE8" completed={25}  className="rounded-3xl" />
           
         </div>
-        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >Do you sell you own products or are you reselling products from other brands?</h1>
+        <h1 className=" home_title md:text-xl  px-12 py-7 w-10/12 relative xl:top-20  text-[13px]  " >Do you sell you own products or are you reselling products from other brands?</h1>
          
 
 
@@ -607,15 +607,15 @@ useEffect(() => {
                         ))
                     }
           </div>
-          <div className=" xl:hidden ml-10 absolute flex  xl:flex-row xl:w-10/12 xl:absolute xl:top-72  flex-col justify-around left-28       ">
+          <div className="xl:hidden ml-10 absolute flex  xl:flex-row xl:w-10/12 xl:absolute xl:top-72  flex-col justify-around md:left-28  left-16      ">
              
 
                 
              
           <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > I sell my own products so I have more freedom to set the price of my product based on its value </h1>
           <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > I sell a combination of products: some that I produce myself and some from other brands  </h1>
-          <h1 className={`option_paragraph position relative top-10 xl:top-2 xl:left-28   w-44 ${font2} ` }  > I resell products from other brands and therefore need to consider more purchasing costs and prices offered by competition on the same product</h1>
-          <h1 className={`option_paragraph   position relative top-2 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
+          <h1 className={`option_paragraph position relative top-16 xl:top-2 xl:left-28   w-44 ${font2} ` }  > I resell products from other brands and therefore need to consider more purchasing costs and prices offered by competition on the same product</h1>
+          <h1 className={`option_paragraph   position relative top-10 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
            
              
           </div>
