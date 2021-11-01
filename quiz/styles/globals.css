@@ -18,9 +18,6 @@ body{
 }
 
 
-.scatter{
-  background-image: url("../public/images/graph.1-01.png");
-}
 select {
     /* Reset Select */
     appearance: none;
@@ -50,6 +47,8 @@ select {
     box-shadow: 0px 0px 5px rgb(12, 211, 178);
 
   }
+
+
 
   
  
