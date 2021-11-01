@@ -448,14 +448,14 @@ function Step2( {formData, navigation}) {
     return (
         <div className="w-full mt-16">
 
-        <h1 className=" absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
-        <hr className="w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
+        <h1 className="  hidden xl:flex absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
+        <hr className=" hidden xl:flex w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
         
 
         <div className=" px-12 relative xl:top-20 ">
-        <span className="text-blue-700 ">6%</span>
+        <span className="text-blue-700 ">21%</span>
           
-          <Progress  color="#304EE8" completed={6}  className="rounded-3xl" />
+          <Progress  color="#304EE8" completed={21}  className="rounded-3xl" />
           
         </div>
         <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >In B2B how often do you change your price for an avg client?</h1>

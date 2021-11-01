@@ -448,8 +448,8 @@ const showBar = (index)=>{
         <div className="w-full mt-16">
 
 
-        <h1 className=" absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
-        <hr className="w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
+        <h1 className=" hidden xl:flex absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
+        <hr className=" hidden xl:flex w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
         
 
         <div className=" px-12 relative xl:top-20 ">

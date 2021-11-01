@@ -79,10 +79,10 @@ const Radardata = {
       <div className="  h-full mt-16 grid place-items-center">
 
       <div className="container relative   ">
-      <h1 className=" mx-auto home_title text-3xl text-blue-700 text-center  font-bold px-12 py-7 w-1/3 " >RESULTS</h1>
+      <h1 className=" mx-auto home_title text-3xl text-blue-700 text-center  font-bold px-12 py-7 md:w-1/3 w-3/4 " >RESULTS</h1>
       <h1 className=" mx-auto home_title text-2xl text-blue-700 text-center     w-3/4 " >PRICING MATURITY TEST</h1>
      
-      <div className=" w-8/12 md:flex   mx-auto relative bottom-[100px]  px-50 justify-around  " >
+      <div className=" md:w-8/12 w-full md:flex   mx-auto relative xl:left-52  bottom-[100px] md:mr-52 ml-5 md:ml-0  md:px-50   justify-around  " >
 
       <div className="  grid place-items-center h-[100vh]  px-20 ">
       
@@ -149,8 +149,8 @@ const Radardata = {
       </div>
           
       </div>
-       
-      <div className=" w-full  xl:px-72  xl:flex block justify-between  h-9 absolute top-[90vh]  mx-auto  mt-2 ">
+       /
+      <div className="   xl:px-72  xl:flex block justify-between  h-9 absolute top-[90vh]  mx-auto  mt-2 ">
 
 
 
@@ -169,7 +169,7 @@ const Radardata = {
 
 
         ): (formData.Pricingmaturity > 100 &&  formData.Pricingmaturity>= 15 && formData.GlobalComplexity<30) ? (
-          <div className=" text-[12px] mr-14 w-64">
+          <div className=" text-[12px] ml-14 w-64">
              <h1 className="text-green-500">INNOVATION ZONE</h1>
              <p className="mt-5 ">YOU ARE A PRICING LEADER IN ONE
              STEP FURTHER IN PRICE AND
@@ -182,7 +182,7 @@ const Radardata = {
           
 
 
-       <div className=" text-[12px] mr-14 w-64 ">
+       <div className=" text-[12px] ml-14 w-64 ">
        <h1 className="text-red-500">DANGER ZONE</h1>
        <p className="mt-5 ">YOUR ATTENTION TO PRICING COULD
        SERIOUSLY HARM YOUR PERFORMANCE
@@ -193,7 +193,7 @@ const Radardata = {
           </div>
         ):(formData.Pricingmaturity <=25 && formData.GlobalComplexity<=50 && formData.GlobalComplexity>=50)?(
           
-          <div className=" text-[12px] mr-14 w-64">
+          <div className=" text-[12px] ml-14 w-64">
           <h1 className="text-yellow-500">WARNING ZONE</h1>
           <p className="mt-5 ">THE ATTENTION YOU PAY FOR
           PRICING IS NOT SUFFICIENT AND
@@ -206,7 +206,7 @@ const Radardata = {
        
        
         ):(
-          <div className=" text-[12px] mr-14 w-64 ">
+          <div className=" text-[12px] ml-14  w-64 ">
           <h1 className="text-blue-500">COMFORT ZONE</h1>
           <p className="mt-5 ">DO YOU HAVE THE CORRECT TOOLS AND
           RESOURCES TO FACE TODAY’S PRICING
