@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className=" overflow-x-hidden grid  ">
       <Head>
-        <title>Create Next App</title>
+        <title>Pricing Maturity Test</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
    
