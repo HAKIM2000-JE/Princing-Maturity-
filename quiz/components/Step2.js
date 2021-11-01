@@ -542,7 +542,7 @@ const showBar = (index)=>{
         
           </div>
        
-        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 md:bottom-4  bottom-7">
+        <div className="flex w-10/12 md:w-6/12 mx-auto justify-between  xl:left-96 absolute left-5 md:left-28    md:bottom-4  bottom-7">
 
             <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
                 Back

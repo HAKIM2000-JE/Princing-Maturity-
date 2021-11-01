@@ -612,10 +612,10 @@ useEffect(() => {
 
                 
              
-          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > Full reliability, full interaconnection between Inventory/Financial/CRM/commercial/ ERP databases </h1>
-          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > Limited reliability, some interconnection between Inventory/Financial/CRM/commercial  / ERP databases</h1>
-          <h1 className={`option_paragraph position relative top-10 xl:top-2 xl:left-28   w-44 ${font2} ` }  > Not very reliable, no interconnection between Inventory/Financial/CRM/commercial/ ERP databases</h1>
-          <h1 className={`option_paragraph   position relative top-2 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
+          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > Full reliability, full interaconnection <br /> between Inventory/Financialbr<br/>/CRM/commercial/ ERP databases </h1>
+          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > Limited reliability, some interconnection  <br/>betweenInventory/Financial <br/>/CRM/commercial  / ERP databases</h1>
+          <h1 className={`option_paragraph position relative top-9 xl:top-2 xl:left-28   w-44 ${font2} ` }  > Not very reliable, no interconnection between Inventory/Financial/CRM/commercial/ ERP databases</h1>
+          <h1 className={`option_paragraph   position relative top-0 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
            
              
           </div>
@@ -640,7 +640,7 @@ useEffect(() => {
         
           </div>
        
-        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 bottom-4 ">
+        <div className="flex w-10/12 md:w-6/12 mx-auto justify-between  xl:left-96 absolute left-5 md:left-28 bottom-4 ">
 
             <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
                 Back

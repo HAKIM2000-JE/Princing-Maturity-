@@ -520,7 +520,7 @@ useEffect(() => {
           <Progress  color="#304EE8" completed={18}  className="rounded-3xl" />
           
         </div>
-        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >IN B2B HOW DO YOU DIFFERENTIATE PRICE PER CLIENT?</h1>
+        <h1 className=" home_title md:text-xl  px-12 py-7 w-10/12 relative xl:top-20  text-[13px]   " >IN B2B HOW DO YOU DIFFERENTIATE PRICE PER CLIENT?</h1>
          
 
 
@@ -618,10 +618,10 @@ useEffect(() => {
 
                 
              
-          <h1 className={`option_paragraph    position relative top-2 w-56    ${font4} ` }  > All the customers have the same price of a given product at a certain location at a certain time (expect loyalti program or discounts)  </h1>
-          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > Part of the business is not differentiated by client and part of the business is based on negociated prices  </h1>
-          <h1 className={`option_paragraph position relative top-10 xl:top-2 xl:left-28   w-44 ${font2} ` }  > Most of my client have personnalized pricing through contract or quotation to reflects their specific profiles </h1>
-          <h1 className={`option_paragraph   position relative top-2 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
+          <h1 className={`option_paragraph    position relative bottom-2 md:w-56  w-44    ${font4} ` }  > All the customers have the same price of a given product at a certain location at a certain time (expect loyalti program or discounts)  </h1>
+          <h1 className={`option_paragraph position relative top-2  md:w-56  w-44 xl:left-9  ${font3}  ` }  > Part of the business is not differentiated by client and part of the business is based on negociated prices  </h1>
+          <h1 className={`option_paragraph position relative top-7 xl:top-2 xl:left-28   md:w-56  w-44 ${font2} ` }  > Most of my client have personnalized pricing through contract or quotation to reflects their specific profiles </h1>
+          <h1 className={`option_paragraph   position relative top-2 xl:left-9  md:w-56  w-44 ${font1} ` }  > I DONT KNOW </h1>
            
              
           </div>
@@ -646,7 +646,7 @@ useEffect(() => {
         
           </div>
        
-        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 bottom-4 ">
+        <div className="flex w-10/12 md:w-6/12 mx-auto justify-between  xl:left-96 absolute left-5 md:left-28   bottom-4 ">
 
             <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
                 Back

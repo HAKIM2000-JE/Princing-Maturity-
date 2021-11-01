@@ -502,7 +502,7 @@ useEffect(() => {
     
 }
     return (
-        <div className="w-full overflow-y-hidden mt-16">
+        <div className="w-full overflow-y-hidden mt-16 overflow-x-hidden">
 
          <h1 className=" hidden xl:flex absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
         <hr className=" hidden xl:flex w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
@@ -612,10 +612,10 @@ useEffect(() => {
 
                 
              
-          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > I sell my own products so I have more freedom to set the price of my product based on its value </h1>
-          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > I sell a combination of products: some that I produce myself and some from other brands  </h1>
-          <h1 className={`option_paragraph position relative top-16 xl:top-2 xl:left-28   w-44 ${font2} ` }  > I resell products from other brands and therefore need to consider more purchasing costs and prices offered by competition on the same product</h1>
-          <h1 className={`option_paragraph   position relative top-10 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
+          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > I sell my own products so I have more <br /> freedom to set the price  of my product  <br /> based on its value </h1>
+          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > I sell a combination of products:<br /> some that I produce myself  and  <br /> some  from other brands  </h1>
+          <h1 className={`option_paragraph position relative top-8 xl:top-2 xl:left-28   w-44 ${font2} ` }  > I resell products from other brands and therefore need to consider more purchasing costs and prices offered by competition on the same product</h1>
+          <h1 className={`option_paragraph   position relative  xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
            
              
           </div>
@@ -640,7 +640,7 @@ useEffect(() => {
         
           </div>
        
-        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 bottom-4 ">
+        <div className="flex w-10/12 md:w-6/12 mx-auto justify-between  xl:left-96 absolute left-5 md:left-28 bottom-4">
 
             <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
                 Back

@@ -611,8 +611,8 @@ useEffect(() => {
 
                 
              
-          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > I have a dedicated pricing team empowered to manage pricing </h1>
-          <h1 className={`option_paragraph position relative top-12  w-56 xl:left-9  ${font3}  ` }  > I have one Pricing manager/analyst who is supporting the business units</h1>
+          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > I have a dedicated pricing team <br /> empowered  to manage pricing </h1>
+          <h1 className={`option_paragraph position relative top-12  w-56 xl:left-9  ${font3}  ` }  > I have one Pricing manager/analyst <br /> who is supporting the business units</h1>
           <h1 className={`option_paragraph position relative top-16 xl:top-2 xl:left-28   w-44 ${font2} ` }  > I do not have any person in charge of pricing - Pricing is managed by </h1>
           <h1 className={`option_paragraph   position relative top-12 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
            
@@ -639,7 +639,7 @@ useEffect(() => {
         
           </div>
        
-        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 bottom-4 ">
+        <div className="flex w-10/12 md:w-6/12 mx-auto justify-between  xl:left-96 absolute left-5 md:left-28 bottom-4 ">
 
             <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
                 Back

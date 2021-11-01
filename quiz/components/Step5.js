@@ -472,7 +472,7 @@ function Step2( {formData, navigation}) {
 
           <div className="xl:hidden px-10  absolute  xl:px-28   xl:justify-around xl:relative h-[100px]   top-36">
           {
-                        Array(44).fill("s").map((value,index)=>(
+                        Array(29).fill("s").map((value,index)=>(
                            
                                 values.includes(index)?(
                                     <div className="w-[1em]">
@@ -529,7 +529,7 @@ function Step2( {formData, navigation}) {
 
           
 
-          <div className=" xl:hidden ml-10 flex flex-col    absolute left-44 xl:left-7 xl:px-12   xl:relative  xl:top-44 xl:w-11/12 top-[120px]  h-[400px] xl:mx-auto xl:ml-0  justify-between ">
+          <div className=" xl:hidden md:ml-10 flex flex-col    absolute left-44 xl:left-7 xl:px-12   xl:relative  xl:top-44 xl:w-11/12 top-[120px]  md:h-[400px] h-[300px]  xl:mx-auto xl:ml-0  justify-between ">
              {
 
 
@@ -552,7 +552,7 @@ function Step2( {formData, navigation}) {
         
           </div>
        
-        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 bottom-4 ">
+        <div className="flex w-10/12 md:w-6/12 mx-auto justify-between  xl:left-96 absolute left-5 md:left-28 bottom-4  ">
 
             <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
                 Back

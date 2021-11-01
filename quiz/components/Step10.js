@@ -79,7 +79,7 @@ function Step10({formData, navigation}) {
            
         </div>
 
-        <div className="flex w-6/12 mx-auto justify-between  md:left-96 absolute left-28 bottom-4 ">
+        <div className="flex w-10/12 md:w-6/12 mx-auto justify-between  xl:left-96 absolute left-5 md:left-28 bottom-4 ">
 
         <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
             Back

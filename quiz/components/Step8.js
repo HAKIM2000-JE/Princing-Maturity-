@@ -610,10 +610,10 @@ useEffect(() => {
 
                 
              
-          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > No, my inventory is not limited and I do not have to take this in consideration when setting the price </h1>
-          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > My product has a certain lifetime and I need to consider some stock or capacity limitations when adjusting the price</h1>
-          <h1 className={`option_paragraph position relative top-14 xl:top-2 xl:left-28   w-44 ${font2} ` }  > Yes, my inventory is fixed or has low flexibility and I need to adapt permanetly my pricing to demand/offer ebalance</h1>
-          <h1 className={`option_paragraph   position relative top-5 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
+          <h1 className={`option_paragraph    position relative  w-56   ${font4} ` }  > No, my inventory is not limited and I do <br /> not have to take this in consideration <br /> when setting the price </h1>
+          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > My product has a certain lifetime and I <br /> need to consider some stock or capacity limitations when adjusting the price</h1>
+          <h1 className={`option_paragraph position relative top-7 xl:top-2 xl:left-28   w-44 ${font2} ` }  > Yes, my inventory is fixed or has low flexibility and I need to adapt permanetly my pricing to demand/offer ebalance</h1>
+          <h1 className={`option_paragraph   position relative top-2 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
            
              
           </div>
@@ -638,7 +638,7 @@ useEffect(() => {
         
           </div>
        
-        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 bottom-4 ">
+        <div className="flex w-10/12 md:w-6/12 mx-auto justify-between  xl:left-96 absolute left-5 md:left-28 bottom-4">
 
             <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
                 Back

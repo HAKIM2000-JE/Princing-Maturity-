@@ -78,7 +78,7 @@ const Radardata = {
 
       <div className="  h-full mt-16 grid place-items-center ">
 
-      <div className="container relative  right-7 md:right-0  ">
+      <div className=" w-full container relative  right-7 md:right-0  ">
       <h1 className=" md:mx-auto home_title md:text-3xl text-blue-700 text-center  font-bold px-12 py-7 md:w-1/3 w-3/4 " >RESULTS</h1>
       <h1 className=" md:mx-auto home_title md:text-2xl  text-blue-700 text-center     w-3/4 " >PRICING MATURITY TEST</h1>
      
@@ -149,7 +149,7 @@ const Radardata = {
       </div>
           
       </div>
-       /
+       
       <div className="   xl:px-72  xl:flex block justify-between  h-9 absolute top-[90vh]  mx-auto  mt-2 ">
 
 

@@ -503,7 +503,7 @@ useEffect(() => {
  }
 
     return (
-        <div className="w-full overflow-y-hidden mt-16">
+        <div className="w-full overflow-y-hidden mt-16 ">
 
         <h1 className=" hidden xl:flex absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
         <hr className="hidden xl:flex w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
@@ -612,9 +612,9 @@ useEffect(() => {
 
                 
              
-          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > My product is quite unique, price is more about the value of my product, competition is less important </h1>
-          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > My product is somehow comparable to the one of competition, pricing plays a role, but is not the only decision driver </h1>
-          <h1 className={`option_paragraph position relative top-10 xl:top-2 xl:left-28   w-44 ${font2} ` }  > My product is very similar to what competition is offering, price is a key decision driver</h1>
+          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > My product is quite unique, price is more  <br /> about  the value of my product, <br /> competition is less important </h1>
+          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > My product is somehow comparable <br /> to the one of competition, pricing <br /> plays a role, but is not the only <br /> decision driver </h1>
+          <h1 className={`option_paragraph position relative top-7 xl:top-2 xl:left-28   w-44 ${font2} ` }  > My product is very similar to what competition is offering, price is a key decision driver</h1>
           <h1 className={`option_paragraph   position relative top-2 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
            
              
@@ -640,7 +640,7 @@ useEffect(() => {
         
           </div>
        
-        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 bottom-4 ">
+        <div className="flex w-10/12 md:w-6/12 mx-auto justify-between  xl:left-96 absolute left-5 md:left-28 bottom-4">
 
             <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
                 Back

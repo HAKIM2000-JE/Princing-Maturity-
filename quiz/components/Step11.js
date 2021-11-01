@@ -510,7 +510,7 @@ useEffect(() => {
         
 
         <div className=" px-12 relative xl:top-20 ">
-        <span className="text-blue-700 ">57</span>
+        <span className="text-blue-700 ">57%</span>
           
           <Progress  color="#304EE8" completed={57}  className="rounded-3xl" />
           
@@ -607,15 +607,15 @@ useEffect(() => {
                         ))
                     }
           </div>
-          <div className=" xl:hidden ml-10 absolute flex  xl:flex-row xl:w-10/12 xl:absolute xl:top-72  flex-col justify-around md:left-28  left-16       ">
+          <div className=" xl:hidden ml-10 absolute flex  xl:flex-row xl:w-10/12 xl:absolute xl:top-72  flex-col justify-around md:left-28  left-16     ">
              
 
                 
              
-          <h1 className={`option_paragraph    position relative top-2 w-56   ${font4} ` }  > Pricing decisions are made based on pricing performance analysis and/or pricing research with differentiated rules by SKU & pier pricing </h1>
-          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > Pricing decisions are made based on competition tracking and some high level pricing guidelines</h1>
-          <h1 className={`option_paragraph position relative top-14 xl:top-2 xl:left-28   w-44 ${font2} ` }  >Pricing decisions are made without any analysis. This is more based on business sense and/or budget needs </h1>
-          <h1 className={`option_paragraph   position relative top-7 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
+          <h1 className={`option_paragraph    position relative bottom-2 w-56   ${font4} ` }  > Pricing decisions are made based on <br /> pricing performance analysis and/or <br />  pricing research with differentiated rules<br />  by SKU & pier pricing </h1>
+          <h1 className={`option_paragraph position relative top-2  w-56 xl:left-9  ${font3}  ` }  > Pricing decisions are made based on <br /> competition tracking and some high <br /> level pricing guidelines</h1>
+          <h1 className={`option_paragraph position relative top-6 xl:top-2 xl:left-28   w-44 ${font2} ` }  >Pricing decisions are made without any analysis. This is more based on business sense and/or budget needs </h1>
+          <h1 className={`option_paragraph   position relative top-2 xl:left-9 ${font1} ` }  > I DONT KNOW </h1>
            
              
           </div>
@@ -640,7 +640,7 @@ useEffect(() => {
         
           </div>
        
-        <div className="flex w-6/12 mx-auto justify-between  xl:left-96 absolute left-28 bottom-4 ">
+        <div className="flex w-10/12 md:w-6/12 mx-auto justify-between  xl:left-96 absolute left-5 md:left-28 bottom-4">
 
             <button className="text-green-700  opacity-75 hover:opacity-100 " onClick={previous}>
                 Back

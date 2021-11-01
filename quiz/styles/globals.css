@@ -97,6 +97,7 @@ select {
     box-shadow: 8px -1px 5px 0px rgba(152,149,149,0.54);
 -webkit-box-shadow: 8px -1px 5px 0px rgba(152,149,149,0.54);
 -moz-box-shadow: 8px -1px 5px 0px rgba(152,149,149,0.54);
+  
   }
 
 
@@ -251,6 +252,8 @@ canvas{
       display: none;
     }
 
+
+   
 
    
     
