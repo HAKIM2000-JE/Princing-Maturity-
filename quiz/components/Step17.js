@@ -5,7 +5,7 @@ import {point} from "../public/images/point.png"
 import Image from 'next/image'
 
 
-import graph from "../public/images/graph.1-01.png"
+import graph from "../public/images/graph 4100x2400_Plan de travail 1.png"
 
 
 function Step17({formData}) {
@@ -79,17 +79,25 @@ const Radardata = {
       <div className="  h-full mt-16 grid place-items-center ">
 
       <div className=" w-full container relative  right-7 md:right-0  ">
-      <h1 className=" md:mx-auto home_title md:text-3xl text-blue-700 text-center  font-bold px-12 py-7 md:w-1/3 w-3/4 " >RESULTS</h1>
-      <h1 className=" md:mx-auto home_title md:text-2xl  text-blue-700 text-center     w-3/4 " >PRICING MATURITY TEST</h1>
+      <h1 className=" md:mx-auto home_title md:text-3xl text-blue-700 text-center  font-bold px-12 py-7 md:w-1/3 w-3/4 mb-5 md:mb-0" >RESULTS</h1>
+      <h1 className=" md:mx-auto home_title md:text-2xl  text-blue-700 text-center    hidden md:flex  w-3/4 " >PRICING MATURITY TEST</h1>
      
       <div className=" md:w-8/12 w-full md:flex   mx-auto relative xl:left-52  bottom-[100px] md:mr-52 ml-5 md:ml-0  md:px-50   justify-around  " >
 
-      <div className="  grid place-items-center h-[100vh]  px-20 ">
+      <div className="  grid place-items-center h-[100vh]  px-12 ">
       
-      <div className=" hidden xl:block absolute bottom-[40px] left-[20px]  mr-44">
+      <div className=" hidden xl:block absolute bottom-[40px] left-[30px]  mr-44   ">
 
       
       <Image src={graph} height={680} width={390}  />
+      </div>
+
+
+
+      <div className=" md:hidden  absolute left-[30px]    mr-[150px]   ">
+
+      
+      <Image src={graph} height={860} width={390}  />
       </div>
 
 
@@ -135,7 +143,7 @@ const Radardata = {
      
     
     
-      <div className="mt-28 "  >
+      <div className="mt-28 relative right-7 mb:righ-7 px-2"  >
       <Radar data={Radardata} options={{responsive:true,scales: {
         r: {
           ticks: {

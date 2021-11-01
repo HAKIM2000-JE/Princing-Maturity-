@@ -102,7 +102,7 @@ const devis = ({ service , name , email}) => {
 
     switch (id) {
         case "step1":
-            return <Step1 {...props } />;
+            return <Step17 {...props } />;
         case "step2":
             return <Step18 {...props } />;
         case "step3":
