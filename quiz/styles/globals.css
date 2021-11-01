@@ -46,7 +46,7 @@ select {
   
 
   .bar_option_mlti_large {
-    border-top: 3px solid #3039e8;
+    border-top: 3px solid #3039e8 !important;
     box-shadow: 0px 0px 5px rgb(12, 211, 178);
 
   }
@@ -180,7 +180,7 @@ canvas{
 
 
 .bar_option_mlti{
-    border-top: 3px solid #3039e8;
+    border-top: 3px solid #3039e8 !important;
     box-shadow: 0px 0px 5px rgb(12, 211, 178);
     width: 30px;
     transition: ease-in 0.5ms;

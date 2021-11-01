@@ -339,10 +339,10 @@ useEffect(() => {
          }
      }
      
-     newstyles[index]="bar_option_mlti   "
+     newstyles[index]="bar_option_mlti"
 
      if([0,1,3,7,10].includes(index)){
-        newstyles[index]="bar_option_mlti_large   "
+        newstyles[index]="bar_option_mlti_large"
        
      }else{
 
@@ -475,17 +475,17 @@ useEffect(() => {
      }
  }
  
- newstyles[index]="bar_option_mlti   "
+ 
 
  if([0,1,3,7,10].includes(index)){
-    newstyles[index]="bar_option_mlti_large   "
+    newstyles[index]="bar_option_mlti_large"
    
  }else{
-
-    
-   
-
+    newstyles[index]="bar_option_mlti"
  }
+
+
+
 
     
  
