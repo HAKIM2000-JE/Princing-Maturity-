@@ -45,15 +45,22 @@ function Step10({formData, navigation}) {
         
     }
     return (
-        <div className="w-full overflow-y-hidden">
-        <div className=" px-12  ">
-        <span className="text-blue-700">42%</span>
+        <div className="w-full overflow-y-hidden mt-16">
+        <h1 className=" absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
+        <hr className="w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
+        
+
+        <div className=" px-12 relative xl:top-20 ">
+        <span className="text-blue-700 ">6%</span>
           
-          <Progress  color="#304EE8" completed={42}  className="rounded-3xl" />
+          <Progress  color="#304EE8" completed={6}  className="rounded-3xl" />
           
         </div>
+        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >SELECT THE PRICING LEVERS YOU ARE USING:</h1>
+         
+        
 
-        <h1 className=" home_title text-xl  px-12 py-7 w-11/12 " >SELECT THE PRICING LEVERS YOU ARE USING:</h1>
+        
 
 
         <div className="w-10/12 justify-between  mx-auto text-sm text-blue-700 lg:flex flex-wrap">

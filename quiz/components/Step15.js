@@ -367,16 +367,159 @@ useEffect(() => {
         
  }
 
-    return (
-        <div className="w-full overflow-y-hidden">
+ const showvalueSmall = (index)=>{
+     
+     var newstyles= Array(22).fill("w-14 mt-4 rounded-3xl border-t-2 border-blue-700")
+     switch(index){
+         case(0):
+            newstyles[1]="barToslect"
+             showshap(0)
+            break
+ 
+         case(1):
+            newstyles[0]="barToslect"
+            showshap(0)
+           
+            break
+ 
+         case(2):
+            newstyles[1]="barToslect"
+            newstyles[3]="barToslect"
+            showshap(2)
+ 
+            break
+ 
+         case(3):
+         newstyles[1]="barToslect"
+         newstyles[2]="barToslect"
+         showshap(2)
+ 
+            
+            break
+ 
+          case(4):
+           
+            newstyles[3]="barToslect"
+            newstyles[5]="barToslect"
+            newstyles[6]="barToslect"
+            newstyles[7]="barToslect"
+            break
+ 
+         case(5):
+         
+            newstyles[3]="barToslect"
+            newstyles[4]="barToslect"
+            newstyles[6]="barToslect"
+            newstyles[7]="barToslect"
+            break
+ 
+         case(6):
+         newstyles[3]="barToslect"
+         newstyles[4]="barToslect"
+         newstyles[5]="barToslect"
+         newstyles[7]="barToslect"
+         
+         break
+         
+         case(7):
+         newstyles[3]="barToslect"
+         newstyles[4]="barToslect"
+         newstyles[5]="barToslect"
+         newstyles[6]="barToslect"
+         showshap(6)
+         
+         break
+         
+         case(8):
+         newstyles[7]="barToslect"
+         newstyles[9]="barToslect"
+         newstyles[10]="barToslect"
+         
+         break
+ 
+ 
+         case(9):
+         newstyles[8]="barToslect"
+         newstyles[10]="barToslect"
+         newstyles[7]="barToslect"
+         showshap(8)
+         
+         break
+ 
+         case(10):
+         newstyles[8]="barToslect"
+         newstyles[9]="barToslect"
+         newstyles[7]="barToslect"
+         showshap(9)
+         
+         break
+ 
+         
+         
+      
+         
+         
+         
+ 
+         
+     }
+     for(let i=0;i<=0 ; i++){
+      if(newstyles[i]=="bar_option_mlti"){
+          newstyles[i]=""
+      }
+  }
+  
+  newstyles[index]="bar_option_mlti   "
+ 
+  if([0,1,3,7,10].includes(index)){
+     newstyles[index]="bar_option_mlti_large   "
+    
+  }else{
+ 
+     
+    
+ 
+  }
+ 
+     
+  
+         
+ 
+   
+  
+  setBatstyle(newstyles)
+ 
+ 
+ 
+ 
+  
+ 
+  setscore(10-index)
+  
+ 
+  
+     
+ }
 
-        <div className=" px-12 ">
-        <span className="text-blue-700 ">96%</span>
+    return (
+        <div className="w-full overflow-y-hidden mt-16">
+
+        <h1 className=" absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
+        <hr className="w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
+        
+
+        <div className=" px-12 relative xl:top-20 ">
+        <span className="text-blue-700 ">6%</span>
           
-          <Progress  color="#304EE8" completed={96}  className="rounded-3xl" />
+          <Progress  color="#304EE8" completed={6}  className="rounded-3xl" />
           
         </div>
-        <h1 className=" home_title text-xl  px-12 py-7 w-11/12 " >How closely are pricing decisions monitored?</h1>
+        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >How closely are pricing decisions monitored?</h1>
+         
+        
+        
+ 
+   
          
 
 
@@ -391,11 +534,11 @@ useEffect(() => {
                              <span  className="option_number absolute left-2 mt-2 xl:hidden " >{10-index}</span>
                              {
                                 index==0 || index==3 || index==7 || index==9 ?(
-                            <hr className={` ${barStyle[index]}  w-20 mt-4 rounded-3xl border-t-2  xl:rotate-90 border-blue-700   bar_option_hover     z-40 `} onClick={()=>{showvalue(index)}} />
+                            <hr className={` ${barStyle[index]}  w-20 mt-4 rounded-3xl border-t-2  xl:rotate-90 border-blue-700   bar_option_hover     z-40 `} onClick={()=>{showvalueSmall(index)}} />
 
 
                                 ):(
-                            <hr className={` ${barStyle[index]}  w-7 mt-4  bar_option_hover    xl:rotate-90  rounded-3xl border-t-2 border-blue-700 z-40  `} onClick={()=>{showvalue(index)}} />
+                            <hr className={` ${barStyle[index]}  w-7 mt-4  bar_option_hover    xl:rotate-90  rounded-3xl border-t-2 border-blue-700 z-40  `} onClick={()=>{showvalueSmall(index)}} />
 
                                 )
                              }
@@ -424,7 +567,7 @@ useEffect(() => {
 
                             <div className="">
                             <div className="">
-                            <span  className="option_number relative bottom-2 right-2  " >{index}</span>
+                            <span  className="option_number relative bottom-2 right-2 cursor-pointer  " onClick={()=>{ showLargeShap(index) ;showvalue(index)}}  >{index}</span>
                             {
 
                                 index==0 || index==1 || index==3 || index==7 || index==10 ?(

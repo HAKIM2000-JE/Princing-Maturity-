@@ -2,6 +2,7 @@
 
 body{
     background-color: #EEF0F6;
+    overflow-y: hidden;
 }
 .title{
     font-family: 'IBM Plex Sans', sans-serif;
@@ -136,7 +137,7 @@ select {
 canvas{
 
   width:350px !important;
-  height:480px !important;
+  height:520px !important;
 
 }
 .barToslect{

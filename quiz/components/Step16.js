@@ -54,7 +54,7 @@ function Step16( {formData, navigation}) {
 
     return (
      
-        <div className="h-full w-full">
+        <div className="h-full w-full mt-16">
         
         <div className=" px-12  ">
         <span className="text-blue-700">100%</span>
@@ -80,7 +80,7 @@ function Step16( {formData, navigation}) {
         <div className="flex w-5/12 mx-auto justify-between    mt-44 ">
 
        
-          <button className=" btn_start w-8/12 md:relative left-20  rounded-2xl text-blue-600 text-xl font-bold bg-white py-1 " onClick={()=>{
+          <button className=" btn_start w-11/12 md:8/12 xl:3/12 md:relative  xl:left-5 left-20  rounded-2xl text-blue-600 text-xl font-bold bg-white py-1 " onClick={()=>{
              
 
                const Pricing = formData.score10*3 +  formData.score11*2 + formData.score12*3 +  formData.score13*2 + formData.score14*2

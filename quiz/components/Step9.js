@@ -55,7 +55,6 @@ function Step2( {formData, navigation}) {
     }
 
     const showvalue = (index)=>{
-          alert(index)
          
            var newstyles= Array(44).fill("w-14 mt-4 rounded-3xl border-t-2 border-white font-bold")
 
@@ -350,18 +349,114 @@ const showBar = (index)=>{
       
      
  }
+
+
+  const showBarV = (index)=>{
+    
+
+    switch (index){
+        case 0 :
+            showvalue(0)
+            setscore(10)
+            break
+
+        case 1 :
+          
+            showvalue(4)
+            setscore(9)
+            break;
+         case 2 :
+             
+              showvalue(9)
+              setscore(8)
+              break;
+
+       case 3:
+             
+               showvalue(13)
+               setscore(7)
+               break;
+        
+       case  4 :
+             
+             
+             showvalue(17)
+             setscore(6)
+             break;
+      
+      case 5 :
+             
+      
+             showvalue(21)
+             setscore(5)
+
+             break;
+
+      case 6:
+             
+           
+              showvalue(26)
+              setscore(4)
+
+              break;
+
+      case  7 :
+
+             
+              showvalue(30)
+              setscore(3)
+              break
+
+              
+      case 8 :
+          
+            showvalue(34)
+            setscore(2)
+            break
+      
+      case 9 :
+          
+            showvalue(39)
+            setscore(1)
+            break
+      
+      case 10 :
+       
+          showvalue(43)
+          setscore(0)
+
+          break
+
+          case 11 :
+              
+              showvalue(43)
+              setscore(0)
+
+              break
+          
+        
+    }
+    
+}
     
 
     return (
-        <div className="w-full">
+        <div className="w-full mt-16">
 
-        <div className=" px-12 ">
-        <span className="text-blue-700">36%</span>
+        <h1 className=" absolute text-lg text-blue-700   px-12 py-7 w-10/12 " >Pricing Maturity Test</h1>
+        <hr className="w-10/12 ml-14 absolute top-16 px-2 border-t-2 border-white " />
+        
+
+        <div className=" px-12 relative xl:top-20 ">
+        <span className="text-blue-700 ">6%</span>
           
-          <Progress  color="#304EE8" completed={36}  className="rounded-3xl" />
+          <Progress  color="#304EE8" completed={6}  className="rounded-3xl" />
           
         </div>
-        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 " >How many differentiated price list per channel or per geograpahy do you have?</h1>
+        <h1 className=" home_title text-xl  px-12 py-7 w-10/12 relative xl:top-20 " >How many differentiated price list per channel or per geograpahy do you have?</h1>
+         
+        
+       
          
 
 
@@ -427,7 +522,7 @@ const showBar = (index)=>{
           <div className=" xl:hidden ml-10 flex flex-col    absolute left-44 xl:left-7 xl:px-12   xl:relative  xl:top-44 xl:w-11/12 top-[120px]  h-[400px] xl:mx-auto xl:ml-0  justify-between ">
              {
                  choices.map((choice , index)=>(
-                     <h1 className={`option_text text-${colors[index]} hover:text-blue-700   hover:font-bold  cursor-pointer  ` }   onClick={()=>{showBar(index)}} >{choice}</h1>
+                     <h1 className={`option_text text-${colors[index]} hover:text-blue-700   hover:font-bold  cursor-pointer  ` }   onClick={()=>{showBarV(index)}} >{choice}</h1>
                  ))
              }
           </div>

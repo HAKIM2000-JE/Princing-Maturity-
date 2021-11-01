@@ -78,7 +78,7 @@ function Step1({formData , navigation}) {
              }
              
           }} >
-            Start
+            Next
           </button>
      
          

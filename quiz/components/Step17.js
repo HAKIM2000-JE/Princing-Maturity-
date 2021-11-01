@@ -22,8 +22,10 @@ function Step17({formData}) {
       data: [{
         y: formData.GlobalComplexity,
         x: formData.Pricingmaturity,
+      
         
       }],
+      pointRadius: 10,
       
       fill: true,
       backgroundColor: "#304EE8",
@@ -74,26 +76,30 @@ const Radardata = {
 
     return (
 
-      <div className="  h-full grid place-items-center">
+      <div className="  h-full mt-16 grid place-items-center">
 
-      <div className="container relative  bottom-16">
+      <div className="container relative   ">
       <h1 className=" mx-auto home_title text-3xl text-blue-700 text-center  font-bold px-12 py-7 w-1/3 " >RESULTS</h1>
       <h1 className=" mx-auto home_title text-2xl text-blue-700 text-center     w-3/4 " >PRICING MATURITY TEST</h1>
      
-      <div className=" w-10/12 md:flex  relative bottom-[100px]  px-5  justify-between" >
+      <div className=" w-8/12 md:flex   mx-auto relative bottom-[100px]  px-50 justify-around  " >
 
-      <div className="  relative  h-[900px] mt-36    ">
+      <div className="  grid place-items-center h-[100vh]  px-20 ">
       
-      <div className=" relative bottom-[95px] right-[20px] ">
-      <Image src={graph} height={650} width={420}  />
+      <div className=" hidden xl:block absolute bottom-[40px] left-[20px]  mr-44">
+
+      
+      <Image src={graph} height={680} width={390}  />
       </div>
-      
-      <Scatter data={data} className="  absolute h-[350px]   top-0 "  options={{responsive:true,maintainAspectRatio: false,scales: {
+
+
+     
+      <Scatter data={data} className="    h-[350px] relative right-[80px] bottom-1 "  options={{responsive:true,maintainAspectRatio: false,scales: {
         x: {
           title: {
             display: true,
-            text: 'Pricing Maturity'
-          },
+            text: 'Pricing Complexity'
+          }, 
           min: 0,
           max: 100,
           ticks: {
@@ -107,7 +113,7 @@ const Radardata = {
         y: {
           title: {
             display: true,
-            text: 'Pricing Complexity'
+            text: 'Pricing Maturity'
           },
           min: 0,
           max: 125,
@@ -129,7 +135,7 @@ const Radardata = {
      
     
     
-      <div className="mt-28"  >
+      <div className="mt-28 "  >
       <Radar data={Radardata} options={{responsive:true,scales: {
         r: {
           ticks: {
@@ -144,8 +150,13 @@ const Radardata = {
           
       </div>
        
-      <div className=" w-full px-20  xl:flex block justify-between  h-9 absolute top-[90vh]  mx-auto  mt-2 ">
-          <div className=" text-[10px] mr-14 ">
+      <div className=" w-full  xl:px-72  xl:flex block justify-between  h-9 absolute top-[90vh]  mx-auto  mt-2 ">
+
+
+
+      {
+        formData.Pricingmaturity >= 100?(
+          <div className=" text-[12px] mr-14 w-64 ">
              <h1 className="text-indigo-500">PRICING LEADER /
              TREND SETTER</h1>
              <p className="mt-5 ">YOU ARE A MARKET DRIVER, YOU
@@ -156,7 +167,9 @@ const Radardata = {
           </div>
 
 
-          <div className=" text-[10px] mr-14 ">
+
+        ): (formData.Pricingmaturity > 100 &&  formData.Pricingmaturity>= 15 && formData.GlobalComplexity<30) ? (
+          <div className=" text-[12px] mr-14 w-64">
              <h1 className="text-green-500">INNOVATION ZONE</h1>
              <p className="mt-5 ">YOU ARE A PRICING LEADER IN ONE
              STEP FURTHER IN PRICE AND
@@ -164,8 +177,36 @@ const Radardata = {
              AND CHALLENGES AND BEST
              ANTICIPATE UPCOMING</p>
           </div>
+        ):  (formData.Pricingmaturity <50 && formData.GlobalComplexity>70) ? (
+          <div className="">
+          
 
-          <div className=" text-[10px] mr-14 ">
+
+       <div className=" text-[12px] mr-14 w-64 ">
+       <h1 className="text-red-500">DANGER ZONE</h1>
+       <p className="mt-5 ">YOUR ATTENTION TO PRICING COULD
+       SERIOUSLY HARM YOUR PERFORMANCE
+       CONTACT AN EXPERT TO REGAIN CONTROL
+       OF YOUR PRICING</p>
+    </div>
+     
+          </div>
+        ):(formData.Pricingmaturity <=25 && formData.GlobalComplexity<=50 && formData.GlobalComplexity>=50)?(
+          
+          <div className=" text-[12px] mr-14 w-64">
+          <h1 className="text-yellow-500">WARNING ZONE</h1>
+          <p className="mt-5 ">THE ATTENTION YOU PAY FOR
+          PRICING IS NOT SUFFICIENT AND
+          OPTIMIZED MANAGEMENT OF YOUR
+          PRICING WOULD ALLOW YOU TO
+          GAIN IN PERFORMANCE
+          </p>
+       </div>
+   
+       
+       
+        ):(
+          <div className=" text-[12px] mr-14 w-64 ">
           <h1 className="text-blue-500">COMFORT ZONE</h1>
           <p className="mt-5 ">DO YOU HAVE THE CORRECT TOOLS AND
           RESOURCES TO FACE TODAY’S PRICING
@@ -174,46 +215,23 @@ const Radardata = {
           BALANCE YOUR CURRENT SITUATION</p>
        </div>
 
-       <div className=" text-[10px] mr-14 ">
-       <h1 className="text-yellow-500">WARNING ZONE</h1>
-       <p className="mt-5 ">THE ATTENTION YOU PAY FOR
-       PRICING IS NOT SUFFICIENT AND
-       OPTIMIZED MANAGEMENT OF YOUR
-       PRICING WOULD ALLOW YOU TO
-       GAIN IN PERFORMANCE
-       </p>
-    </div>
+        )
 
-    <div className=" text-[10px] mr-14 ">
-    <h1 className="text-red-500">DANGER ZONE</h1>
-    <p className="mt-5 ">YOUR ATTENTION TO PRICING COULD
-    SERIOUSLY HARM YOUR PERFORMANCE
-    CONTACT AN EXPERT TO REGAIN CONTROL
-    OF YOUR PRICING</p>
- </div>
+        
+      }
+          
+          
+
+        
         
       </div>
+      
       </div>
 
 
 
 
-      <div className="">
-
-      <h1 className=" mx-auto home_title text-3xl text-blue-700 text-center  font-bold px-12 py-7 w-1/3 " >Information</h1>
-
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-      aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-      commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
-      feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
-      .feugait nulla facilisi
-      Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-      aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-      .commodo consequat
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-      aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit</p>
-      </div>
-
+     
 
      
       </div>
