@@ -8,7 +8,7 @@ function Step16( {formData, navigation}) {
     const [lastname, setlastname] = useState("")
     const [phone, setphone] = useState("")
     const [email, setemail] = useState("")
-    const [zone, setzone] = useState("")
+    const [zone, setzone] = useState("CONFORT ZONE")
 
 
      const  handlfirstname = (e)=>{
@@ -112,7 +112,7 @@ function Step16( {formData, navigation}) {
 
               
 
-              console.log(formData)
+            
 
               if(formData.Pricingmaturity >= 100){
                 setzone('PRICING LEADER TREND SETTER')
@@ -120,11 +120,17 @@ function Step16( {formData, navigation}) {
                 setzone('INNOVATION ZONE')
               }else if (formData.Pricingmaturity <50 && formData.GlobalComplexity>70) {
                 setzone('DANGER ZONE')
-              }else{
+              }
+              
+              else if(formData.Pricingmaturity <=25 && formData.GlobalComplexity<=50 && formData.GlobalComplexity>=50){
                 setzone('WARNING ZONE')
+              }else{
+                setzone('CONFORT ZONE')
+
               }
 
-              formData.zone=zone
+              formData.zone = zone
+              console.log(formData)
               sendData()
               next()
           }} >
