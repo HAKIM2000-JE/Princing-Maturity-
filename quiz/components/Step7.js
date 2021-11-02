@@ -530,7 +530,7 @@ useEffect(() => {
                             <div className="   ">
                              
                             <div className="flex ">
-                             <span  className="option_number absolute left-2 mt-2 xl:hidden " >{10-index}</span>
+                             <span  className="option_number absolute left-2 mt-2 xl:hidden cursor-pointer "  onClick={()=>{showvalueSmall(index)}} >{10-index}</span>
                              {
                                 index==0 || index==3 || index==7 || index==9 ?(
                             <hr className={` ${barStyle[index]}  w-20 mt-4 rounded-3xl border-t-2  xl:rotate-90 border-blue-700   bar_option_hover     z-40 `} onClick={()=>{showvalueSmall(index)}} />
