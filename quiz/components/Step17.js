@@ -86,7 +86,7 @@ const Radardata = {
      
       <div className=" md:w-8/12 w-full xl:flex  md:ml-5/12   mx-auto relative xl:left-52  bottom-[100px] md:mr-52 ml-5 md:ml-0  md:px-50   justify-around  " >
 
-      <div className="  grid place-items-center h-[100vh]  lg:px-12  px-28 ">
+      <div className="  grid place-items-center h-[100vh]  lg:px-12  px-[90px] ">
       
       <div className="  block fixed h-[610px] w-[260px]    mr-44   ">
 
