@@ -87,7 +87,8 @@ const devis = ({ service , name , email}) => {
         tool:"",
         data:"",
         organization : "",
-        process : ""
+        process : "",
+        zone:"",
 
         
     };

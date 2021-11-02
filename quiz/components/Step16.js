@@ -8,6 +8,7 @@ function Step16( {formData, navigation}) {
     const [lastname, setlastname] = useState("")
     const [phone, setphone] = useState("")
     const [email, setemail] = useState("")
+    const [zone, setzone] = useState("")
 
 
      const  handlfirstname = (e)=>{
@@ -36,7 +37,7 @@ function Step16( {formData, navigation}) {
     const sendData = ()=>{
       axios(
           {
-              url: "https://pricing-maturity.herokuapp.com//answers/client/save",
+              url: "https://pricing-maturity.herokuapp.com/answers/client/save",
               method: "POST",
               data: formData
           }
@@ -112,6 +113,18 @@ function Step16( {formData, navigation}) {
               
 
               console.log(formData)
+
+              if(formData.Pricingmaturity >= 100){
+                setzone('PRICING LEADER TREND SETTER')
+              }else if(formData.Pricingmaturity > 100 &&  formData.Pricingmaturity>= 15 && formData.GlobalComplexity<30){
+                setzone('INNOVATION ZONE')
+              }else if (formData.Pricingmaturity <50 && formData.GlobalComplexity>70) {
+                setzone('DANGER ZONE')
+              }else{
+                setzone('WARNING ZONE')
+              }
+
+              formData.zone=zone
               sendData()
               next()
           }} >

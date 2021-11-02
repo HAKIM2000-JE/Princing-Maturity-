@@ -3,13 +3,15 @@ import { Radar } from "react-chartjs-2";
 import {point} from "../public/images/point.png"
 
 import Image from 'next/image'
-
+import { useState } from "react";
 
 import graph from "../public/images/graph 4100x2400_Plan de travail 1.png"
 
 
 function Step17({formData}) {
 
+
+ 
     const data = {
   labels: ["0","50%", "100%"],
   datasets: [
