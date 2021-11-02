@@ -84,27 +84,22 @@ const Radardata = {
       <h1 className=" md:mx-auto home_title md:text-3xl text-blue-700 text-center  font-bold px-12 py-7 md:w-1/3 w-3/4 mb-5 md:mb-0" >RESULTS</h1>
       <h1 className=" md:mx-auto home_title md:text-2xl  text-blue-700 text-center    hidden md:flex  w-3/4 " >PRICING MATURITY TEST</h1>
      
-      <div className=" md:w-8/12 w-full md:flex   mx-auto relative xl:left-52  bottom-[100px] md:mr-52 ml-5 md:ml-0  md:px-50   justify-around  " >
+      <div className=" md:w-8/12 w-full xl:flex  md:ml-5/12   mx-auto relative xl:left-52  bottom-[100px] md:mr-52 ml-5 md:ml-0  md:px-50   justify-around  " >
 
-      <div className="  grid place-items-center h-[100vh]  px-12 ">
+      <div className="  grid place-items-center h-[100vh]  lg:px-12  px-28 ">
       
-      <div className=" hidden xl:block absolute bottom-[40px] left-[30px]  mr-44   ">
+      <div className="  block fixed h-[610px] w-[260px]    mr-44   ">
 
       
-      <Image src={graph} height={680} width={390}  />
+      <Image src={graph}   layout='fill'
+     />
       </div>
 
 
 
-      <div className=" md:hidden  absolute left-[30px]    mr-[150px]   ">
-
-      
-      <Image src={graph} height={860} width={390}  />
-      </div>
-
-
+    
      
-      <Scatter data={data} className="    h-[350px] relative right-[80px] bottom-1 "  options={{responsive:true,maintainAspectRatio: false,scales: {
+      <Scatter data={data} className="    h-[350px] relative  right-[113px]  top-[8px] "  options={{responsive:true,maintainAspectRatio: false,scales: {
         x: {
           title: {
             display: true,
