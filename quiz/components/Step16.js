@@ -36,7 +36,7 @@ function Step16( {formData, navigation}) {
     const sendData = ()=>{
       axios(
           {
-              url: "http://localhost:5000/answers/client/save",
+              url: "https://pricing-maturity.herokuapp.com//answers/client/save",
               method: "POST",
               data: formData
           }
@@ -88,7 +88,7 @@ function Step16( {formData, navigation}) {
 
                formData.Pricingmaturity=(Pricing/120 )*100
                
-               alert('Global Complexity : ' + formData.GlobalComplexity + " %" + "pricing Maturity : " + formData.Pricingmaturity +" %")
+              //  alert('Global Complexity : ' + formData.GlobalComplexity + " %" + "pricing Maturity : " + formData.Pricingmaturity +" %")
               const hr = formData.score1*3 +  formData.score2*1 + formData.score3*3 +  formData.score4*2 + formData.score5*3 + formData.score6*3 +  formData.score7*2 + formData.score8*1 + formData.score9*2
 
 

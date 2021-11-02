@@ -377,21 +377,21 @@ function Step2( {formData, navigation}) {
 
        case 3:
              
-               showvalue(13)
+               showvalue(14)
                setscore(7)
                break;
         
        case  4 :
              
              
-             showvalue(17)
+             showvalue(19)
              setscore(6)
              break;
       
       case 5 :
              
       
-             showvalue(21)
+             showvalue(23)
              setscore(5)
 
              break;
@@ -399,7 +399,7 @@ function Step2( {formData, navigation}) {
       case 6:
              
            
-              showvalue(26)
+              showvalue(28)
               setscore(4)
 
               break;
